@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bmiCalculatorFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="bmi" />
+
+    <item
+        android:id="@+id/stopWatchFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="stopwatch" />
+
+    <item
+        android:id="@+id/webBrowserFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="web" />
+    <item
+        android:id="@+id/tiltSensorFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="tiltsensor" />
+    <item
+        android:id="@+id/galleryFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="gallery" />
+    <item
+        android:id="@+id/mapFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="map" />
+    <item
+        android:id="@+id/flashLightFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="flashlight" />
+    <item
+        android:id="@+id/xylophoneFragment"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="xylophone" />
+
+</menu>
