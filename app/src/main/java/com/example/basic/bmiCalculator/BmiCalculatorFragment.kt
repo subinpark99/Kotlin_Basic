@@ -1,4 +1,4 @@
-package com.example.basic
+package com.example.basic.bmiCalculator
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -36,7 +36,7 @@ class BmiCalculatorFragment:Fragment() {
     private fun move() {
         height = binding.heightEt.text.toString()
         weight = binding.weightEt.text.toString()
-        val action = BmiCalculatorFragmentDirections.actionBmiCalculatorFragmentToBmiResultFragment(
+        val action =BmiCalculatorFragmentDirections.actionBmiCalculatorFragmentToBmiResultFragment(
             height,
             weight
         )

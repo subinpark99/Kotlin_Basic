@@ -1,15 +1,15 @@
-package com.example.basic
+package com.example.basic.flashlight
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.basic.databinding.FragmentTiltSensorBinding
+import com.example.basic.databinding.FragmentFlashlightBinding
 
-class TiltSensorFragment: Fragment() {
+class FlashLightFragment: Fragment() {
 
-    private var _binding: FragmentTiltSensorBinding?=null
+    private var _binding: FragmentFlashlightBinding?=null
     private val binding get()=_binding!!
 
     override fun onCreateView(
@@ -17,7 +17,7 @@ class TiltSensorFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentTiltSensorBinding.inflate(inflater, container, false)
+        _binding = FragmentFlashlightBinding.inflate(inflater, container, false)
         return binding.root
     }
 

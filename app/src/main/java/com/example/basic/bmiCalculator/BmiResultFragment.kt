@@ -1,4 +1,4 @@
-package com.example.basic
+package com.example.basic.bmiCalculator
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.example.basic.R
 import com.example.basic.databinding.FragmentBmiResultBinding
 import kotlin.math.pow
 

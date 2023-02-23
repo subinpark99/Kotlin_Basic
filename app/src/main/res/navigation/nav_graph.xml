@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/todoListFragment">
 
     <fragment
         android:id="@+id/bmiCalculatorFragment"
-        android:name="com.example.basic.BmiCalculatorFragment"
+        android:name="com.example.basic.bmiCalculator.BmiCalculatorFragment"
         android:label="BmiCalculatorFragment" >
         <action
             android:id="@+id/action_bmiCalculatorFragment_to_bmiResultFragment"
@@ -15,39 +14,39 @@
     </fragment>
     <fragment
         android:id="@+id/todoListFragment"
-        android:name="com.example.basic.TodoListFragment"
+        android:name="com.example.basic.todoList.TodoListFragment"
         android:label="TodoListFragment" />
     <fragment
         android:id="@+id/flashLightFragment"
-        android:name="com.example.basic.FlashLightFragment"
+        android:name="com.example.basic.flashlight.FlashLightFragment"
         android:label="FlashLightFragment" />
     <fragment
         android:id="@+id/galleryFragment"
-        android:name="com.example.basic.GalleryFragment"
+        android:name="com.example.basic.myGallery.GalleryFragment"
         android:label="GalleryFragment" />
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.example.basic.MapFragment"
+        android:name="com.example.basic.map.MapFragment"
         android:label="MapFragment" />
     <fragment
         android:id="@+id/stopWatchFragment"
-        android:name="com.example.basic.StopWatchFragment"
+        android:name="com.example.basic.stopwatch.StopWatchFragment"
         android:label="StopWatchFragment" />
     <fragment
         android:id="@+id/tiltSensorFragment"
-        android:name="com.example.basic.TiltSensorFragment"
+        android:name="com.example.basic.tiltSensor.TiltSensorFragment"
         android:label="TiltSensorFragment" />
     <fragment
         android:id="@+id/webBrowserFragment"
-        android:name="com.example.basic.WebBrowserFragment"
+        android:name="com.example.basic.webBrowser.WebBrowserFragment"
         android:label="WebBrowserFragment" />
     <fragment
         android:id="@+id/xylophoneFragment"
-        android:name="com.example.basic.XylophoneFragment"
+        android:name="com.example.basic.xylophone.XylophoneFragment"
         android:label="XylophoneFragment" />
     <fragment
         android:id="@+id/bmiResultFragment"
-        android:name="com.example.basic.BmiResultFragment"
+        android:name="com.example.basic.bmiCalculator.BmiResultFragment"
         android:label="BmiResultFragment" >
         <argument
             android:name="height"
