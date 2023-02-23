@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/todoListFragment">
+    app:startDestination="@id/todoFragment">
 
     <fragment
         android:id="@+id/bmiCalculatorFragment"
@@ -14,8 +14,12 @@
     </fragment>
     <fragment
         android:id="@+id/todoListFragment"
-        android:name="com.example.basic.todoList.TodoListFragment"
-        android:label="TodoListFragment" />
+        android:name="com.example.basic.todoList.ui.TodoListFragment"
+        android:label="TodoListFragment" >
+        <action
+            android:id="@+id/action_todoListFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
     <fragment
         android:id="@+id/flashLightFragment"
         android:name="com.example.basic.flashlight.FlashLightFragment"
@@ -55,4 +59,16 @@
             android:name="weight"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.basic.todoList.ui.CalendarFragment"
+        android:label="CalendarFragment" >
+        <action
+            android:id="@+id/action_calendarFragment_to_todoListFragment"
+            app:destination="@id/todoListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/todoFragment"
+        android:name="com.example.basic.todoList.ui.TodoFragment"
+        android:label="TodoFragment" />
 </navigation>

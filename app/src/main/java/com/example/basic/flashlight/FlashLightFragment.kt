@@ -1,5 +1,6 @@
 package com.example.basic.flashlight
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,11 +17,23 @@ class FlashLightFragment: Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFlashlightBinding.inflate(inflater, container, false)
+
+
+        binding.flashSwitch.setOnCheckedChangeListener { _, isChecked ->
+            if(isChecked){
+                requireActivity().startService(Intent(requireContext(),TorchService::class.java).apply{
+                    action ="on"
+                })
+            }else{
+                requireActivity().startService(Intent(requireContext(),TorchService::class.java).apply{
+                    action ="off"
+                })
+            }
+        }
         return binding.root
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
