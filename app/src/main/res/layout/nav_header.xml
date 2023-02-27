@@ -16,13 +16,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="오준석의 안드로이드 \n생활코딩 실습"
+        android:layout_marginTop="10dp"
+        android:text="재미로 ㅋ"
         android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@id/star_image"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/star_image" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
